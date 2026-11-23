@@ -23,8 +23,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={beVietnamPro.variable}
     >
-      <Navbar />
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+
+        <Navbar />
+        
+        {children}
+        
+      </body>
     </html>
   );
 }
