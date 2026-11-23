@@ -5,11 +5,13 @@ export default function Navbar() {
   return ( 
     <nav className="flex items-center justify-between bg-background p-2 border-b border-gray-200 shadow-sm">
 
-        <div arial-label="logo and site name" className="flex items-center gap-2">
+        <div className="flex items-center gap-2">
           
           <Image src="/site/Logo.png" alt="GĐPT Vạn Hạnh Logo" width={45} height={45} />
           
-          <h1 className="text-secondary text-brand-title font-bold">GĐPT Vạn Hạnh</h1>
+          <span className="text-brand-title leading-[1.2] font-bold">
+            GĐPT Vạn Hạnh
+          </span>
           
         </div>
 
