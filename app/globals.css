@@ -19,7 +19,37 @@
   --color-accent: var(--accent); 
   --color-foreground: var(--foreground);
 
+  --text-display: clamp(2.25rem, 5vw, 3.5rem);
+  --text-section: clamp(1.75rem, 3vw, 2.5rem);
+  --text-subheading: clamp(1.25rem, 2vw, 1.5rem);
+  --text-brand-title: clamp(1.25rem, 2vw, 1.75rem);
+
   --font-sans: var(--font-be-vietnam-pro);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  h1 {
+    @apply text-display;
+  }
+
+  h2 {
+    @apply text-section;
+  }
+
+  h3 {
+    @apply text-subheading;
+  }
+
+  body {
+    line-height: 1.6;
+  }
 }
 
 body {
