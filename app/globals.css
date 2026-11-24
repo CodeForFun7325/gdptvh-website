@@ -19,7 +19,7 @@
   --color-accent: var(--accent); 
   --color-foreground: var(--foreground);
 
-  --text-display: clamp(2.25rem, 5vw, 3.5rem);
+  --text-display: clamp(2.1rem, 5vw, 3rem);
   --text-section: clamp(1.75rem, 3vw, 2.5rem);
   --text-subheading: clamp(1.25rem, 2vw, 1.5rem);
   --text-brand-title: clamp(1.25rem, 2vw, 1.75rem);
@@ -49,6 +49,10 @@
 
   body {
     line-height: 1.6;
+  }
+
+  p { 
+    font-size: 1.125rem;
   }
 }
 
